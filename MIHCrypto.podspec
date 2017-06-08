@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                     by OpenSSL. Supports RSA, DES, AES, ECC (Elliptic Curve Cryptography) and more."
   s.homepage     = "https://github.com/hohl/MIHCrypto"
   s.authors       =  {'Michael Hohl' => 'me@michaelhohl.net'}
-  s.source       = { :git => "https://github.com/hohl/MIHCrypto.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/lw254605953/MIHCrypto.git", :tag => "#{s.version}" }
   
   s.ios.platform          = :ios, '8.0'
   s.ios.deployment_target = '6.0'
