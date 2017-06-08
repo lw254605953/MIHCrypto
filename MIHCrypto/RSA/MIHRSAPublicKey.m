@@ -33,7 +33,7 @@
     self = [super init];
     if (self) {
         // --- BEGIN OPENSSL HACK ---
-        NSString *base64DataString = [dataValue MIH_base64EncodedStringWithWrapWidth:64];
+        NSString *base64DataString = [[NSString alloc] initWithData:dataValue encoding:NSUTF8StringEncoding];
         base64DataString = [@"-----BEGIN PUBLIC KEY-----\n" stringByAppendingString:base64DataString];
         base64DataString = [base64DataString stringByAppendingString:@"\n-----END PUBLIC KEY-----"];
         NSData *base64Data = [base64DataString dataUsingEncoding:NSUTF8StringEncoding];
