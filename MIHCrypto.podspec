@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   s.authors       =  {'Michael Hohl' => 'me@michaelhohl.net'}
   s.source       = { :git => "https://github.com/lw254605953/MIHCrypto.git", :tag => "#{s.version}" }
   
-  s.ios.platform          = '8.0'
+  s.ios.platform          = :ios, '8.0'
   s.ios.deployment_target = '6.0'
-  s.osx.platform          = '10.10'
+  s.osx.platform          = :osx, '10.10'
   s.osx.deployment_target = '10.8'
 
   s.requires_arc = true
